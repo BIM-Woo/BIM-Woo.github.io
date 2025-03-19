@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name     = "wonwoo portfolio"
+  spec.name     = "voyager"
   spec.version  = "1.0.0"
   spec.authors  = ["redVi"]
   spec.email    = ["liberty195@gmail.com"]
