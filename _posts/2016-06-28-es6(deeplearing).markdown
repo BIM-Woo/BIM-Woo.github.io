@@ -165,7 +165,7 @@ done: False
 ##### 에이전트 클래스 구현(분포 모델에 따른 구현) 
 ###### ▶ 샘플 모델에 따른 구현은 TD법에서 설명
 
-```python
+{% highlight js %}
 from collections import defaultdict
 import numpy as np
 
@@ -203,8 +203,7 @@ class RandomAgent:
             G = self.gamma * G + reward  # G값(감가된 누적 보상) 계산
             self.cnt[state] += 1
             self.v[state] += (G - self.v[state]) / self.cnt[state] # 상태별 평균 가치 업데이트 (점진적 평균)
-```
-
+{% endhighlight %}
 튜플로 묶는 이유 
 
 {% highlight js %}
@@ -218,7 +217,7 @@ S₀, A₀, R₀, S₁, A₁, R₁, …, S₈, A₈, R₈, S₉
 - (state, action, reward) 단위로 저장
 - 마지막 $$S_9$$은 selft.memory에 저장되지 않기 때문
 - **마지막 상태(목표지점)의 가치함수는 0 이므로 갱신할 필요가 없기때문에 저장되지 않는다.**
-```python
+{% highlight js %}
 env = GridWorld()
 agent = RandomAgent()
 episodes = 1000
@@ -243,7 +242,7 @@ for episode in range(episodes):
 # 가치 함수 시각화
 env.render_v(agent.V)
 {% endhighlight %}
-```
+{% highlight js %}
 
 
 #####  $$ Q(s, a) $$ : 행동 가치 함수
