@@ -1,17 +1,29 @@
 ---
 layout: post
-title:  "study!"
-crawlertitle: "study!"
-summary: "study!"
-date:   2016-06-28 23:09:47 +0700
+title:  "Deep Learning Study"
+crawlertitle:  "Deep Learning Study"
+summary: "Study post"
+date:  1025-05-03 23:09:47 +0700
 categories: posts
-tags: "study!"
-author: "study!"
+tags: "DeepLearning"
+author: "wonwoo"
+---
+##### Monte Carlo Algorithm
 ---
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+## `let` Declarations
+However, we can now create declarations that are bound to any block, called (unsurprisingly) *block scoping*. This means all we need is a pair of `{ .. }` to create a scope. Instead of using var, which always declares variables attached to the enclosing function (or global, if top level) scope, use `let`:
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+{% highlight js %}
+var a = 2;
+
+{
+    let a = 3;
+    console.log( a );   // 3
+}
+
+console.log( a );       // 2
+{% endhighlight %}
 
 Jekyll also offers powerful support for code snippets:
 
