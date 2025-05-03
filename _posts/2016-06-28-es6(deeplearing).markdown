@@ -242,7 +242,7 @@ for episode in range(episodes):
 # 가치 함수 시각화
 env.render_v(agent.V)
 {% endhighlight %}
-{% highlight js %}
+
 
 
 #####  $$ Q(s, a) $$ : 행동 가치 함수
